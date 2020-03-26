@@ -17,7 +17,7 @@ export default function Register () {
                     
                     <Link className="back-link" to="/">
                         <FiArrowLeft size={16} color="#E02041"/>
-                        Não tenho cadastro
+                        Já sou cadastrado
                     </Link>
                 </section>
 
@@ -27,8 +27,8 @@ export default function Register () {
                     <input placeholder="Whatsapp" />
 
                     <div className="input-group">
-                    <input placeholder="Cidade" />
-                    <input placeholder="UF" style={{ width: 80 }} />
+                        <input placeholder="Cidade" />
+                        <input placeholder="UF" style={{ width: 80 }} />
                     </div>
 
                     <button className="button" type="submit">Cadastrar</button>
