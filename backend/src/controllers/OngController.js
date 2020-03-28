@@ -23,5 +23,15 @@ module.exports = {
         })
 
         return res.json({ id });
+    },
+
+    async delete(req, res) {
+        const { id } = req.params;
+        const ong_id = req.headers.authorization;
+        
+        const incident = await connection('ongs').select('*').delete();
+
+        await connection('incidents').where('id', id).delete();
+        return res.status(204).send();
     }
 }
